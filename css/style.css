@@ -140,6 +140,7 @@ body {
 
 .background-acceuil {
     background-image: url("../img/electron.gif");
+    backdrop-filter: brightness(75%);
 }
 
 /* police personnalisé */
