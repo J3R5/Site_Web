@@ -5,14 +5,18 @@ body {
 /* Bandeau Code CSS */
 
 .bandeau{
-    background:rgba(42,50,105,255);
-    padding: 15px;
+    display: flex;
     position: fixed;
-    width: 100%;
-}
 
-.nav-BP {
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+
+    background:rgba(42,50,105,255);
 }
 
 .nav-BP a{
@@ -21,6 +25,7 @@ body {
     color:rgba(244,207,72,255);
     text-decoration:none;
     border-style:double;
+
     display: inline-block;
 }
 
@@ -30,14 +35,75 @@ body {
 
 .nav-BP a:hover{
     background-color:#3d5b94;
+    transition: 0.5s;
 }
 
 .nav-title {
+    cursor: pointer;
+
+    margin: 0;
+    padding: 5px;
+
+    font-family: Segment,'Courier New', Courier, monospace, serif;
+
     color:rgba(244,207,72,255);
-    display: inline-block;
-    margin: 0px 25px;
-    vertical-align: middle;
-    font-family: 'Courier New', Courier, monospace, serif;
+}
+
+.nav-title:hover {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    100%{
+        text-shadow:0 0 3px #FFE205, 0 0 7px #FFE205, 0 0 20px #EDD205;color:#FFE205;
+    }
+    0%{
+      text-shadow: 0;
+    }
+}
+
+.nav-logo {
+    height: 60px;
+    width: 55px;
+
+    margin:0;
+}
+
+.nav-logo:hover {
+    animation: turn 5s ease-in-out infinite alternate;
+}
+
+@keyframes turn {
+    100%{
+        transform: rotate(360deg);  
+    }
+    0%{
+        transform: rotate(0deg);
+    }
+}
+
+.Bord_1{
+    width: 0;
+    height: 0;
+
+    background-color: transparent;
+
+    border-right : 45px solid transparent;
+    border-bottom : 45px solid #16233b;
+    border-top: 45px solid #16233b;
+    border-left: 45px solid #16233b;
+}
+
+.Bord_2{
+    width: 0;
+    height: 0;
+
+    background-color: transparent;
+
+    border-right : 45px solid #16233b;
+    border-bottom : 45px solid #16233b;
+    border-top: 45px solid #16233b;
+    border-left: 45px solid transparent;
 }
 
 /* Portfolio nom     */
@@ -72,6 +138,13 @@ body {
 
 /* Background */
 
-.background {
+.background-acceuil {
     background-image: url("../img/electron.gif");
+}
+
+/* police personnalisé */
+
+@font-face {
+    font-family: Segment;
+    src: url(../font/Seven\ Segment.ttf) format(truetype);
 }
