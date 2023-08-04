@@ -1,11 +1,5 @@
 body {
     margin: 0;
-    background-color: #100720;
-    background-image: url(../img/logo_bleu.png);
-    background-repeat: no-repeat;
-    background-size: 1600px 1600px;
-    background-position: center center;
-    backdrop-filter: blur(4px);
 }
 
 /* Bandeau Code CSS */
