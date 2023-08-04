@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    background-color: #100720;
+    background-image: url(../img/logo_bleu.png);
+    background-repeat: no-repeat;
+    background-size: 1600px 1600px;
+    background-position: center center;
+    backdrop-filter: blur(4px);
+}
+
+/* Bandeau Code CSS */
+
+.bandeau{
+    display: flex;
+    position: fixed;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+
+    background:rgba(42,50,105,255);
+}
+
+.nav-BP a{
+    padding: 5px;
+    margin: 5px 25px;
+    color:rgba(244,207,72,255);
+    text-decoration:none;
+    border-style:double;
+
+    display: inline-block;
+}
+
+.nav-BP a:active {
+    color:rgba(244,207,72,255);
+}
+
+.nav-BP a:hover{
+    background-color:#3d5b94;
+    transition: 0.5s;
+}
+
+.nav-title {
+    cursor: pointer;
+
+    margin: 0;
+    padding: 5px;
+
+    font-family: Segment,'Courier New', Courier, monospace, serif;
+    font-size: 50px;
+
+    color:rgba(244,207,72,255);
+}
+
+.nav-title:hover {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    100%{
+        text-shadow:0 0 3px #FFE205, 0 0 7px #FFE205, 0 0 20px #EDD205;color:#FFE205;
+    }
+    0%{
+      text-shadow: 0;
+    }
+}
+
+.nav-logo {
+    height: 60px;
+    width: 55px;
+
+    margin:0;
+}
+
+.nav-logo:hover {
+    animation: turn 5s ease-in-out infinite alternate;
+}
+
+@keyframes turn {
+    100%{
+        transform: rotate(360deg);  
+    }
+    0%{
+        transform: rotate(0deg);
+    }
+}
+
+.Bord_1{
+    width: 0;
+    height: 0;
+
+    background-color: transparent;
+
+    border-right : 45px solid transparent;
+    border-bottom : 45px solid #16233b;
+    border-top: 45px solid #16233b;
+    border-left: 45px solid #16233b;
+}
+
+.Bord_2{
+    width: 0;
+    height: 0;
+
+    background-color: transparent;
+
+    border-right : 45px solid #16233b;
+    border-bottom : 45px solid #16233b;
+    border-top: 45px solid #16233b;
+    border-left: 45px solid transparent;
+}
+
+/* titre */
+
+.titre {
+    display: flex;
+
+    padding: 150px 0 50px 0;
+
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-ordi {
+    width: 200px;
+    height: 200px;
+
+}
+
+.main-title {
+    padding: 15px;
+    margin: 0;
+
+    font-family: Segment,'Courier New', Courier, monospace, serif;
+    font-size: 120px;
+
+    color:rgba(244,207,72,255);
+}
+
+.img-binaire {
+    width: 200px;
+    height: 200px;
+
+    cursor: pointer;
+}
+
+/* Texte */
+
+.electronique-t, .informatique-t, .info-emb-t{
+    display: flex;
+
+    align-items:center;
+
+    padding: 25px 15px;
+
+}
+
+.electronique-title, .informatique-title, .info-emb-title {
+    margin: 0;
+    padding: 0 25px;
+
+    font-family: Segment,'Courier New', Courier, monospace, serif;
+    font-size: 50px;
+    
+    color:rgba(244,207,72,255);
+
+}
+
+.elect-1, .info-1, .info-emb-1 {
+    padding: 0 25px;
+    height: 64px;
+    width: 64px;
+}
+
+.elect-2, .info-2, .info-emb-2 {
+    padding: 0 25px;
+    height: 64px;
+    width: 64px;
+}
+
+.electronique-main, .informatique-main, .info-emb-main {
+    display: flex;
+
+    align-items: center;
+
+    margin: 0 25px;
+
+}
+
+.electronique-texte, .informatique-texte, .info-emb-texte {
+    margin: 0 15px 0 25px;
+
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 25px;
+    text-indent: 2.5em;
+}
+
+.circuit, .Coding, .microchip {
+    width: 500px;
+    height: 500px;
+}
+
+a, a:active {
+    color:rgba(244,207,72,255);
+}
+
+/* police personnalisé */
+
+@font-face {
+    font-family: Segment;
+    src: url(../font/Seven\ Segment.ttf) format(truetype);
+}
