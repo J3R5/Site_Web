@@ -38,6 +38,13 @@ body {
     color:#FFFFFF;
 }
 
+/* chill */
+
+.chill {
+    width:350px;
+    height:200px;
+}
+
 /* Background */
 
 .background-acceuil {
@@ -50,4 +57,22 @@ body {
 @font-face {
     font-family: Segment;
     src: url(../font/Seven\ Segment.ttf) format(truetype);
+}
+
+/* responsive */
+
+@media only screen and (max-width:1000px){
+    .portfolio {
+        font-size:200px;
+    }
+    .Logo_prenom {
+        font-size: 80px;
+    }
+    .citation {
+        font-size: 35px;
+    }
+    .chill {
+        width:650px;
+        height:450px;
+    }
 }
