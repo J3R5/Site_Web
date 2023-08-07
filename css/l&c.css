@@ -114,16 +114,20 @@ a, a:active {
 }
 
 /* responsive */
-
-@media  screen and (max-width:1000px) {
+@media only screen and (max-width:1600px) {
     .main-title {
        font-size: 80px;
     }  
 }
 
-@media  screen and (max-width:800px){
+@media only screen and (max-width:1000px){
     .electronique-main, .informatique-main, .info-emb-main {
         flex-direction: column;
+    }
+
+    .electronique-texte, .informatique-texte, .info-emb-texte {
+        font-size: 35px;
+        line-height: 40px;
     }
 }
 
