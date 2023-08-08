@@ -21,10 +21,19 @@ body {
 
 /* Logo prenom       */
 
-.Logo_prenom {
-    display: inline-block;
+.LP {
+    display: flex;
     align-items: center;
-    vertical-align: middle;
+    justify-content: center;
+
+}
+
+.Logo {
+    width: 145px;
+    height: 150px;
+}
+
+.prenom {
     font-family:Snell Roundhand, cursive;
     font-size:40px;
     color:rgba(61,91,148,255);
@@ -65,8 +74,12 @@ body {
     .portfolio {
         font-size:200px;
     }
-    .Logo_prenom {
-        font-size: 80px;
+    .Logo {
+        width: 180px;
+        height: 190px;
+    }   
+    .prenom {
+        font-size:60px;
     }
     .citation {
         font-size: 35px;
