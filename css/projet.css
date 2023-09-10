@@ -1,0 +1,202 @@
+/* bandeau + footer */
+
+@import url(bandeau.css);
+@import url(footer.css);
+
+.bandeau {
+    z-index: 3;
+}
+
+/* variable */
+
+:root{
+    --background-color: #100720;
+}
+
+/* body */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--background-color);
+}
+
+/* titre*/
+
+.title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 120px 0 25px 0;
+}
+
+.title h1{
+    padding: 15px;
+    margin: 0;
+
+    font-family: Segment,'Courier New', Courier, monospace, serif;
+    font-size: 100px;
+
+    color:var(--golden);
+}
+
+.title img{
+    width: 160px;
+    height: 160px;
+}
+
+/* instruction */
+
+.instruction p{
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 1em;
+    margin: 0 0 35px 0;
+}
+
+/* card */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.flex-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.flex-article {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+
+    margin: 5px 0;
+}
+
+.flex-article h4 {
+    text-align: center; 
+}
+
+.card .code-logo, .card .ide-logo{
+    width: 60px;
+    height: 60px;
+}
+
+.card .img-title{
+    width: 50px;
+    height: 50px;
+}
+
+.card {
+    width: 325px;
+    height: 400px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 25px;
+}
+
+.card h3 {
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 1em;
+    margin: 10px 0;
+}
+
+.card h4{
+    color:var(--golden);
+    font-family: Segment;
+    margin: 10px 0 5px 0;
+    font-size: 1.5em;
+}
+
+.card-text{
+    z-index: 1;
+    margin: 10px;
+}
+.card hr{
+    color:#FFF;
+    margin: 0 2px;
+}
+
+.card .Description{
+    margin: 15px 0;
+
+    text-align: center;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+    color:#FFF;
+}
+
+.card .Description p{
+    margin: 5px 0;
+}
+
+.card .Segment{
+    font-family: Segment,'Courier New', Courier, monospace, serif;
+    font-size: 20px;
+
+    color: var(--golden);
+}
+
+.Schema{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-Schema {
+    height: 50px;
+    width: 50px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    transition: all 0.2s linear;
+    animation: rotBGimg 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover::before{
+    animation: rotBGimg 3s linear infinite;
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+}
+
+

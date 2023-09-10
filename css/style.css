@@ -1,0 +1,91 @@
+/* bandeau */
+
+@import url(bandeau.css);
+
+/* base */
+
+body {
+    margin: 0;
+}
+
+/* Portfolio nom     */
+
+.portfolio {
+    padding-top: 60px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-family:Brush Script MT, cursive;
+    font-size:150px;
+    color:rgba(61,91,148,255);
+}
+
+/* Logo prenom       */
+
+.LP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Logo {
+    width: 145px;
+    height: 150px;
+}
+
+.prenom {
+    font-family:Snell Roundhand, cursive;
+    font-size:40px;
+    color:rgba(61,91,148,255);
+}
+
+/* citation         */
+
+.citation {
+    margin-top:10px;
+    font-family:'Courier New', Courier, monospace;
+    color:#FFFFFF;
+}
+
+/* chill */
+
+.chill {
+    width:350px;
+    height:200px;
+}
+
+/* Background */
+
+.background-acceuil {
+    background-image: url("../img/electron.gif");
+    backdrop-filter: brightness(75%);
+}
+
+/* police personnalisé */
+
+@font-face {
+    font-family: Segment;
+    src: url(../font/Seven\ Segment.ttf) format(truetype);
+}
+
+/* responsive */
+
+@media only screen and (max-width:1000px){
+    .portfolio {
+        font-size:200px;
+    }
+    .Logo {
+        width: 180px;
+        height: 190px;
+    }   
+    .prenom {
+        font-size:60px;
+    }
+    .citation {
+        font-size: 35px;
+    }
+    .chill {
+        width:650px;
+        height:450px;
+    }
+}
