@@ -1,0 +1,159 @@
+/* bandeau */
+
+@import url(bandeau.css);
+@import url(footer.css);
+
+/* background */
+
+:root {
+    --background-color: #100720;
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+/* section */
+
+p {
+    margin: 10px;
+}
+
+/* titre */
+
+.titre {
+    display: flex;
+
+    padding: 150px 0 50px 0;
+
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.titre img {
+    width: 200px;
+    height: 200px;
+}
+
+/* titre */
+
+h1 {
+
+    padding: 15px;
+    margin: 0;
+
+    font-family: Segment,'Courier New', Courier, monospace, serif;
+    font-size: 120px;
+
+    color:rgba(244,207,72,255);
+
+}
+
+h2 {
+    margin-top: 45px;
+    padding: 0 25px;
+
+    font-family: Segment,'Courier New', Courier, monospace, serif;
+    font-size: 50px;
+    
+    color:rgba(244,207,72,255);
+}
+
+
+h3 {
+    margin: 35px 0 0 0;
+    padding: 0 25px;
+
+    font-family: Segment,'Courier New', Courier, monospace, serif;
+    font-size: 35px;
+    
+    color:rgba(244,207,72,255);
+}
+
+h4 {
+    margin: 5px 0 0 0;
+    padding: 0 25px;
+
+    font-family: Segment,'Courier New', Courier, monospace, serif;
+    font-size: 20px;
+    
+    color:rgba(244,207,72,255);
+}
+
+/* paragraphe texte */
+
+p, li{
+    margin: 0 15px 0 25px;
+
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 25px;
+}
+
+li{
+    text-align: left;
+}
+
+div div > * + * {
+    margin-top: 1.15rem;
+}
+
+a, a:active {
+    color:rgba(244,207,72,255);
+}
+
+
+
+/* Université */
+
+.Universite {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Universite h3 {
+    height:80px;
+}
+
+.Universite .connaissance{
+    height: 390px;
+}
+
+.Universite img {
+    width: 80px;
+    height: 80px;
+}
+
+.Universite div{
+    width: 230px;
+}
+
+/* police */
+
+@font-face {
+    font-family: Segment;
+    src: url(../font/Seven\ Segment.ttf) format(truetype);
+}
+
+/* Responsive */
+
+@media screen and (max-width:1000px) {
+
+    .titre img{
+        width: 115px;
+        height: 115px;
+    }
+
+    .titre h1{
+        font-size: 35px;  
+    }
+
+}
+
+

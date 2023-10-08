@@ -1,0 +1,147 @@
+/* bandeau */
+
+@import url(bandeau.css);
+
+.bandeau{
+    z-index: 2;
+}
+
+/* base */
+
+body {
+    margin: 0;
+}
+
+/* Logo prenom       */
+
+.LP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px;
+}
+
+.Logo {
+    width: 135px;
+    height: 150px;
+}
+
+.LP p {
+    font-family:'Times New Roman', Times, serif;
+    font-size:23px;
+    text-align: center;
+    color:#FFF;
+}
+
+/* Background */
+
+.background-acceuil {
+    background-image: url("../img/J4o.gif");
+    backdrop-filter: brightness(75%);
+}
+
+/* card */
+
+.card {
+    width: 500px;
+    height: 375px;
+    margin: 0 auto;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+    transform: translateY(150px);
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 25px;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    background: #02243b;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+   
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+hr{
+    margin: 0;
+    padding: 0;
+}
+
+.card h1{
+    margin:0;
+
+    font-family: 'Segment', serif;
+    color:var(--golden);
+
+    margin-left: 50px;
+    
+}
+
+.card__content{
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* projet */
+
+.dev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dev p{
+    font-family: 'Segment','Courier New', Courier, monospace, serif;
+    color:var(--golden);
+    font-size: 30px;
+}
+
+.dev img{
+    width: 60px;
+    height: 60px;
+}
+
+/* police personnalisé */
+
+@font-face {
+    font-family: Segment;
+    src: url(../font/Seven\ Segment.ttf) format(truetype);
+}
+
+/* responsive */
+
+@media only screen and (max-width:1000px){
+    .Logo {
+        width: 180px;
+        height: 190px;
+    }   
+    .prenom {
+        font-size:60px;
+    }
+}
