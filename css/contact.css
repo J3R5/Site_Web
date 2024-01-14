@@ -149,6 +149,11 @@ a img{
   visibility: collapse;
 }
 
+.J3R5{
+  width: 225px;
+  height: 225px;
+}
+
 /* responsive */
 
 @media screen and (max-width:1000px) {

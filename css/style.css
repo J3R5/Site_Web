@@ -40,6 +40,12 @@ body {
     backdrop-filter: brightness(75%);
 }
 
+/* js */
+
+body {
+    background-image: url("../img/matrix.gif");
+}
+
 /* card */
 
 .card {

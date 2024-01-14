@@ -138,3 +138,10 @@ a, a:active {
     }
 }
 
+/* Js */
+
+.matrice{
+    background-image: url(../img/matrice.gif);
+    background-repeat:repeat;
+    transition: 1s;
+}
